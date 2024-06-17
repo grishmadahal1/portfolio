@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title>Contact</title>
+	<link href="contactStyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<script>
+		function openNav() {
+        	document.getElementById("navigation").style.width = "550px";
+        }
+
+		function closeNav() {
+        	document.getElementById("navigation").style.width = "0";
+        }
+
+		function formRequirement(){
+			var a=document.getElementById('Email').value;
+			var b=document.getElementById('Message').value;
+			var c=document.getElementById('name').value;
+			var d=document.getElementById('country').value;
+			if(a=='' || b=='' || c=='' || d==''){
+				alert('Please fill the entire field!');
+
+            }else{
+                alert('Your message has been sent! Thank you :)');
+                }
+		}
+			
+	</script>
+
+	<div class="container">
+		<div class="containerOverlay">
+			<div id="navigation" class="nav">
+				<ul>
+                	<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+      		        <li><a href="Home.html">HOME</a></li>
+        			<li><a href="portfolio.html">PORTFOLIO</a></li>
+          			<li><a href="blog.html">BLOG</a></li>
+            		<li><a href="research.html">RESEARCH</a></li>
+            		<li><a href="contact.html">CONTACT</a></li>
+            	</ul>
+          	</div>
+          	<span style="color:yellow;font-size:32px;margin-left:1250px;margin-top:30px;text-shadow:-3px -2px black;cursor:pointer;display:inline-block;" onclick="openNav()">&#9776;</span>
+				
+			<div class="header">
+				<h1> I'd love to hear from you!</h1>
+			</div>
+
+			<div class="formContainer">
+				<h2>Send your message</h2>
+				<form>
+					Your Full Name:<br> <input type="text" name="name" id="name" placeholder="E.g. Saniya Dahal"></br>
+					Email:<br><input type="text" name="email" id="Email" placeholder="E.g. example@gmail.com">
+					Country:<br><input type="text" name="country" id="country" placeholder="E.g. Nepal"></br>
+					Your Message:<br><textarea name="text1" cols="40" rows="5" id="Message" placeholder="Write something..."></textarea>
+					<br><input type="submit" value="Submit" name="submit" onclick="formRequirement()"></br>
+				</form>
+			</div>
+		</div>
+	</div>
+
+    <footer>
+        <h4>@GRISHMA DAHAL</h4>
+        <a href="https://www.facebook.com/grishma.dahal.9"  target="_blank" id="fb"><img src="fb.png" width="35px" height="35px"/></a>
+        <a href="https://www.instagram.com/grishma_dahal/" id="insta" target="_blank"><img src="insta.png" width="35px" height="35px"/></a>
+        <a href="https://plus.google.com/u/0/106429902666555117005" id="googlePlus" target="_blank"><img src="google.png" width="35px" height="35px"/></a>
+
+    </footer>
+		
+
+</body>
+</html>

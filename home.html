@@ -1,0 +1,79 @@
+<!--Contains the content of Home page -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!--sets title of the page as GRISHMA DAHAL-->
+	<title>GRISHMA DAHAL</title>
+	<!--links external css file to style the Home contents.-->
+	<link href="homeStyle.css" rel="stylesheet" type="text/css">
+	<!--internal javascript-->
+	<script>
+		/*defines the width of the navigation menu on opening  */
+		function openNav() {
+        	document.getElementById("navigation").style.width = "550px";
+        }
+        /*defines the width of the navigation menu on closing  */
+		function closeNav() {
+        	document.getElementById("navigation").style.width = "0";
+        }
+	</script>
+</head>
+
+<body>
+	<!-- all the div divides the body into sections whose styling is done on external css -->
+	<div class="container">
+		<div class="containerOverLay">
+			   <!-- id is used in javascript for defining the functionality of navigation menu and the class is used for styling navigation menu in css-->
+				<div id="navigation" class="nav">
+					<ul>
+					<!--implements the function closeNav() defined on Javascript when clicked on the element.  -->	
+                	<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+      		        <li><a href="Home.html">HOME</a></li>
+        			<li><a href="portfolio.html">PORTFOLIO</a></li>
+          			<li><a href="blog.html">BLOG</a></li>
+            		<li><a href="research.html">RESEARCH</a></li>
+            		<li><a href="contact.html">CONTACT</a></li>
+            	    </ul>
+          		</div>
+          		<!--implements the function openNav() defined on Javascript when clicked on the element -->
+          		<span style="color:yellow;font-size:32px;margin-left:1250px;margin-top:30px;text-shadow:-3px -2px black;cursor:pointer;display:inline-block;" onclick="openNav()">&#9776;</span>
+				
+	            <div class="title">
+					<ul>
+					<!--The string of word is kept in list so that each letter can be styled in css. -->
+						<li>G</li>
+						<li>R</li>
+						<li>I</li>
+						<li>S</li>
+						<li>H</li>
+						<li>M</li>
+						<li>A</li>
+					</ul>
+				</div>
+				<div class="introContainer">
+					<h2>"Let's take a ride to my journey!"</h2>
+				</div>
+	    </div>
+	</div>
+
+ 
+    <div class="myDescription">
+    	<img src="gili.jpg" class="profile" width="280px" height="200px"/>
+	    <div class="aboutContainer">
+	    	<h3> ABOUT ME!</h3>
+	    	<p> Hello good looking people! I am Grishma Dahal from Nepal. The assignments given by my university has made me a programmer and a web developer. Joke apart, I am really proud of what I am doing and what I will be doing in future! Since, I am a beginner, wish me a luck! </p>
+	    </div>
+    </div> 
+
+        <footer>
+        	<!-- Footer contains the copyright and link of the social site page defined in an image-->
+        	<h4>@GRISHMA DAHAL</h4>
+        	<!--target opens the link in a separate tab -->
+        	<a href="https://www.facebook.com/grishma.dahal.9"  target="_blank" id="fb"><img src="fb.png" width="35px" height="35px"/></a>
+        	<a href="https://www.instagram.com/grishma_dahal/" id="insta" target="_blank"><img src="insta.png" width="35px" height="35px"/></a>
+        	<a href="https://plus.google.com/u/0/106429902666555117005" id="googlePlus" target="_blank"><img src="google.png" width="35px" height="35px"/></a>
+
+        </footer>
+</body>
+</html>

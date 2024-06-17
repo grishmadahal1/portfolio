@@ -1,0 +1,264 @@
+body{
+  margin:0px;
+  padding: 0px;
+  background-color: #e6e6e6;	
+}
+
+.cover{
+  background-image:url(technology.jpg);
+  background-size: cover;
+  background-position: center;
+  position:relative;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  top:0;
+  bottom:0;
+  height:100vh;
+}
+
+
+
+.coverOverlay{
+  position: absolute;
+  background-color:   rgb(0, 0, 0,0.5);
+  top:0;
+  bottom:0;
+  height:100%;
+  width:100%;
+  background-attachment: scroll;
+}
+
+
+.nav{
+  height:100%;
+  width:0;
+  position:fixed;
+  background-color: rgb(0,0,0,0.8);
+  transition:-0.5s;
+  margin-left:1000px;
+  overflow-x: hidden;
+  top:80px;
+  display: inline-block;
+}
+
+.nav a{
+  text-decoration: none;
+  font-size: 25px;
+  font-family: sans-serif;
+  color:yellow;
+  display:block;
+  transition:-0.3s;
+  word-spacing: 60px;
+  padding: 60px 8px 10px 55px;
+}
+
+.nav a:hover{
+  color:#f1f1f1;
+}
+
+.nav a:visited{
+  color:blue;
+}
+
+.nav .closebtn{
+  position: absolute;
+  top:0;
+  font-size:40px;
+  left:0;
+  bottom: 0;
+}
+
+.intro{
+  width:500px;
+  height:200px;
+  margin-left: 450px;
+  margin-top: 200px;
+  display: inline-block;
+}
+
+.intro h1{
+  height:35px;  
+  padding-bottom: 20px;
+  color: white;
+  text-shadow:-2px -5px black,-3px -3px black;
+  font-size: 45px;
+  font-family: algerian;
+  font-weight: bold;
+  display: inline-block;
+  animation: animate 3s steps(15);
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 
+  
+}
+
+
+@keyframes animate{
+  0%{
+    width:0ch;
+  }
+
+  100%{
+    width:15ch;
+  }
+}
+
+.arrow{
+  margin-top: 90px;
+  margin-left: 680px;
+}
+
+.arrow a{
+  color: yellow;
+  font-size:30px;
+  text-decoration: none;
+}
+
+.blogIntroContainer{
+  width:800px;
+  height:400px;
+  margin: auto;
+  -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+}
+
+#paragraph1{
+  width:500px;
+  font-size:20px;
+  font-family: arial;
+  margin-left:160px;
+  font-weight: bold;
+  word-spacing: 5px;
+  margin-top: 100px;
+  display: inline-block;
+
+}
+
+.mobile{
+  margin-top: 200px;
+  display: inline-block;
+}
+
+#header2{
+  color:yellow;
+  margin-left: 60px;
+}
+
+.mobilecontainer{
+  width:700px;
+  height: 360px;
+  background-color: black;
+  float: right;
+  margin-top: 120px;
+  margin-right: 100px;
+  -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+
+}
+
+.laptopContainer{
+  width:700px;
+  height:360px;
+  margin-top: 150px;
+  margin-left: 40px;
+  -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  display: inline-block;
+}
+
+.laptop{
+  width:400px;
+  float: right;
+  margin-top: 200px;
+  margin-right: 60px;
+}
+
+.internet{
+  margin-top: 270px;
+  display: inline-block;
+}
+
+.internetContainer{
+  width:700px;
+  height: 580px;
+  background-color: black;
+  float: right;
+  margin-top: 170px;
+  margin-right: 100px;
+  -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+
+}
+
+.calculatorContainer{
+  width:700px;
+  height:360px;
+  margin-top: 150px;
+  margin-left: 40px;
+  -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  display: inline-block;
+}
+
+.cameraContainer{
+   width:700px;
+  height: 300px;
+  background-color: black;
+  margin-top: 180px;
+  float: right;
+  -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  margin-right: 100px;
+
+}
+
+.conclusionContainer{
+  width:600px;
+  height:300px;
+  margin-left: 350px;
+  margin-top: 210px;
+  -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+}
+
+.footer{
+  width:1349px;
+  height:59px;
+  background-color: yellow;
+  opacity:0.9;
+  display: inline-block;
+
+}
+
+.footer h4{
+  height:5px;
+  letter-spacing: 10px;
+  display: inline-block;
+}
+
+#fb{
+  display: inline-block;
+  margin-left: 870px;
+  margin-top: 10px;
+}
+
+#insta{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#googlePlus{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.container{
+  width:100%;
+}

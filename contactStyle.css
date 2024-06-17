@@ -1,0 +1,183 @@
+body{
+	margin:0px;
+  padding: 0px;
+}
+
+
+.container{
+  background-image:url(bright.jpg);
+  background-size: cover;
+  background-position: center;
+  position:relative;
+  background-repeat: no-repeat;
+  top:0;
+  bottom:0;
+  height:130vh;
+
+}  
+
+.containerOverlay{
+  position: absolute;
+  background-color: rgba(0,0,0,0.3);
+  top:0;
+  bottom:0;
+  height:100%;
+  width:100%;
+}
+
+.nav{
+  height:100%;
+  width:0;
+  position:fixed;
+  background-color: rgb(0,0,0,0.8);
+  transition:-0.5s;
+  margin-left:1000px;
+  overflow-x: hidden;
+  top:80px;
+  display: inline-block;
+}
+
+.nav a{
+  text-decoration: none;
+  font-size: 25px;
+  font-family: sans-serif;
+  color:yellow;
+  display:block;
+  transition:-0.3s;
+  word-spacing: 60px;
+  padding: 60px 8px 10px 55px;
+}
+
+.nav a:hover{
+    color:#f1f1f1;
+}
+
+.nav a:visited{
+  color:blue;
+}
+
+.nav .closebtn{
+  position: absolute;
+  top:0;
+  font-size:40px;
+  left:0;
+  bottom: 0;
+}
+
+.header{
+  width:420px;
+  height:40px;
+  display: inline-block;
+  margin-left: 450px;
+  margin-top: 10px;
+}
+
+
+.header h1{
+  color: yellow;
+  font-size: 25px;
+  font-family: algerian;
+  font-weight: bold;
+  display: inline-block;
+  animation: animate 3s steps(21);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+@keyframes animate{
+0%{
+  width:0ch;
+  }
+
+100%{
+  width:21ch;
+  }
+}
+
+
+.formContainer{
+  background-color: black;
+  width:600px;
+  height:640px;
+  margin-top: 65px;
+  margin-left: 360px;
+  opacity: 0.8;
+  box-shadow: -2px -2px orange, 2px 2px purple;
+  display: inline-block;
+}
+
+.formContainer h2{
+  color:white;
+  font:arial;
+  margin-left: 190px;
+  margin-bottom: 20px;
+}
+
+.formContainer form{
+  color:white;
+  margin-left: 30px;
+  margin-top: 35px;
+  font-family: arial;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+}
+
+.formcontainer form input[type=text]{
+  width:500px;
+  height: 40px;
+  margin-top: 15px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+
+}
+
+#Message{
+  padding-top: 10px;
+  padding-bottom: 50px;
+  width:88%;
+  margin-top: 15px;
+
+  }
+
+form input[type=submit]{
+  width:80px;
+  height:30px;
+  margin-top: 40px;
+  margin-left: 180px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+
+footer{
+  width:1349px;
+  height:59px;
+  background-color: yellow;
+  opacity:0.9;
+  display: inline-block;
+
+}
+
+footer h4{
+  height:5px;
+  letter-spacing: 10px;
+  display: inline-block;
+}
+
+#fb{
+  display: inline-block;
+  margin-left: 870px;
+  margin-top: 10px;
+}
+
+#insta{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#googlePlus{
+  display: inline-block;
+  margin-left: 10px;
+}

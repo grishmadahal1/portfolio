@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<head>
+	<style>
+    body{
+        margin:0;
+        padding: 0;
+        background-color: grey;
+
+    }
+    .cover{
+
+        background-image:url(ree.jpg);
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:70vh;
+        background-attachment: fixed;
+        top:0;
+        bottom: 0;
+
+    }
+
+    .coverOverlay{
+        position: absolute;
+        background-color:rgb(0,0,0,0.4);
+        top:0;
+        bottom:0;
+        height:100%;
+        width:100%;
+        background-attachment: scroll;
+
+    }
+
+
+    .nav{
+        height:100%;
+        width:0;
+        position:fixed;
+        background-color: rgb(0,0,0,0.8);
+        transition:-0.5s;
+        margin-left:1000px;
+        overflow-x: hidden;
+        top:80px;
+        display: inline-block;
+  }
+
+    .nav a{
+        text-decoration: none;
+        font-size: 25px;
+        font-family: sans-serif;
+        color:yellow;
+        display:block;
+        transition:-0.3s;
+        word-spacing: 60px;
+        padding: 60px 8px 10px 55px;
+
+      }
+
+    .nav a:hover{
+        color:#f1f1f1;
+    }
+
+    .nav a:visited{
+        color:blue;
+    }
+
+    .nav .closebtn{
+        position: absolute;
+        top:0;
+        font-size:40px;
+        left:0;
+        bottom: 0;
+    }
+
+
+    .intro{
+        width:700px;
+        height:240px;
+        margin-left: 570px;
+        margin-top: 130px;
+        display: inline-block;  
+
+    }
+
+
+
+    .intro h1{
+        color: yellow;
+        font-size: 35px;
+        font-family: algerian;
+        font-weight: bold;
+        display: inline-block;
+        animation: animate 2s steps(8);
+        overflow: hidden;
+        white-space: nowrap;
+        letter-spacing: 6px;
+    }
+
+
+    @keyframes animate{
+        0%{
+            width:0ch;
+        }
+
+        100%{
+            width:8ch;
+        }
+    }
+
+
+    .introContainer{
+        width:1349px;
+        height:400px;
+        background-color: white;
+        background-attachment: scroll;
+        padding-bottom: 0;
+    }
+
+    .whyResearch{
+        width:250px;
+        height:0px;
+        font-family: arial;
+        font-size:20px;
+        font-weight:bold;
+        padding-top: 20px;
+        padding-bottom: 0;
+        letter-spacing: 5px;
+        margin:0;
+        padding-left: 450px;
+        display: inline-block;
+    }
+
+    p{
+        width:525px;
+        font-size: 20px;
+        font-family: arial;
+        font-weight: bold;
+        margin-left: 450px;
+        word-spacing: 5px;
+        line-height: 33px;
+        display: inline-block;
+    }   
+
+    .researchHeader{
+        width:1349px;
+        height:40px;
+        background-color:grey;
+        top:0;
+
+  
+    }
+
+    h3{
+        color:yellow;
+        font-family: arial;
+        font-size: 25px;
+        margin-left: 30px;
+        line-height: 20px;
+        letter-spacing: 2px;
+    }
+
+    a{
+        text-decoration:none;
+    }
+
+    h3:hover{
+    color: black;
+    }
+
+
+    .research1{
+        width:1349px;
+        height:550px;
+        background-image: url(research1.jpg);
+        background-attachment: fixed;
+        background-size: 1349px 680px;
+        background-repeat:no-repeat;
+    }
+
+    .researchContainer{
+        width:1349px;
+        height:300px;
+        background-color: white;
+    }
+
+    .research2{
+        width:1349px;
+        height:550px;
+        background-image: url(research2.jpg);
+        background-attachment: fixed;
+        background-size: 1349px 680px;
+        background-repeat:no-repeat;
+        background-color: black;
+}
+
+    .researchContainer{
+        width:1349px;
+        height:300px;
+        background-color: white;
+    }
+
+    .research3{
+        width:1349px;
+        height:550px;
+        background-image: url(research3.jpg);
+        background-attachment: fixed;
+        background-size: 1349px 680px;
+        background-repeat:no-repeat;
+        background-color: black;
+    }
+
+    .research4{
+        width:1349px;
+        height:550px;
+        background-image: url(research4.jpg);
+        background-attachment: fixed;
+        background-size: 1349px 680px;
+        background-repeat:no-repeat;
+        background-color: black;
+    }
+
+    .research5{
+        width:1349px;
+        height:550px;
+        background-image: url(research5.jpg);
+        background-attachment: fixed;
+        background-size: 1349px 680px;
+        background-repeat:no-repeat;
+        background-color: black;
+    }
+
+    footer{
+        width:1349px;
+        height:59px;
+        background-color: yellow;
+        opacity:0.9;
+        display: inline-block;
+    }
+
+    footer h4{
+        height:5px;
+        letter-spacing: 10px;
+        display: inline-block;
+    }
+
+    #fb{
+        display: inline-block;
+        margin-left: 870px;
+        margin-top: 10px;
+    }
+
+    #insta{
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    #googlePlus{
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <script>
+        function openNav() {
+            document.getElementById("navigation").style.width = "550px";
+        }
+
+        function closeNav() {
+            document.getElementById("navigation").style.width = "0";
+        }
+    </script>
+
+	<div class="cover">
+		<div class="coverOverlay">
+			<div id="navigation" class="nav">
+				<ul>
+                	<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+      		        <li><a href="Home.html">HOME</a></li>
+        			<li><a href="portfolio.html">PORTFOLIO</a></li>
+          			<li><a href="blog.html">BLOG</a></li>
+            		<li><a href="Research.html">RESEARCH</a></li>
+            		<li><a href="contact.html">CONTACT</a></li>
+            	</ul>
+          	</div>
+          		<span style="color:yellow;font-size:32px;margin-left:1250px;margin-top:30px;text-shadow:-3px -2px black;cursor:pointer;display:inline-block;" onclick="openNav()">&#9776;</span>
+		    <div class="intro">
+				<h1>RESEARCH</h1>
+			</div>
+        </div>
+    </div>
+
+	<div class="introContainer">
+	    <h2 class="whyResearch">WHY RESEARCH?<h2><br>
+	    <p>
+	    	Research has been a very important factor that has helped in determining the way my web pages looks to the way it interacts. For a beginner, it is very essential to take reference of other web pages developed by expierenced and professional web developer so that a concept gets developed. <br>The top 5 web pages I had taken references from, is listed as below:  </p>
+	</div>
+    <div class="researchHeader">
+        <a href= "https://brainhub.eu/?utm_source=awwwards" target="_blank"><h3> 1) Brainhub</h3></a>
+    </div>
+	<div class="research1">
+	</div>
+    <div class="researchContainer">
+        <p>This web page has been very helpful to me as I have designed my home page with reference to it. The big background and a overlay was created in reference to this page. I have also got an idea of creating a side navigation bar while going through this page. The thing I like about this website is it has minimal but effective design.<p>
+    </div>
+
+    <div class="researchHeader">
+        <a href="https://crypton.trading/" target="_blank"><h3> 2) Crypton</h3></a>
+    </div>
+    <div class="research2">
+	</div>
+	<div class="researchContainer">
+        <p>From this webpage I had gained a lot knowledge on making web page interesting for user to view by the use of animations. Just like in this webpage I have used typing text animation in almost all of my pages. This website is kind of animative but the animation were not too disturbing to watch which is a good point of this website. <p>
+    </div>
+
+    <div class="researchHeader">
+        <a href="http://www.wadejeffree.com/" target="_blank"><h3> 3) Wade jeffrey</h3></a>
+    </div>
+    <div class="research3">
+    </div>
+    <div class="researchContainer">
+        <p style="margin-top: 60px;">This website is presented in a way that the viewer gets the personality of the developer. The home page has a video on loop where the designer is being hit by the basketball. The work of the designer leaves impression on viewer.</p>
+    </div>
+
+    <div class="researchHeader">
+        <a href="http://www.marleighculver.com/about/" target="_blank"><h3> 4) Marleigh Culver</h3></a>
+    </div>
+    <div class="research4">
+    </div>
+    <div class="researchContainer">
+        <p style="margin-top: 60px;">This website is simple but simple takes more effort and the effort was seen. The color and the font was carefully chosen which gives complementry to the website. The navigation bar were easy to access and the fast loading of the image makes the website more viewer friendly. </p>
+    </div>
+
+    <div class="researchHeader">
+        <a href="http://www.justinmaller.com/" target="_blank"><h3> 5) Justin M. Maller</h3></a>
+    </div>
+    <div class="research5">
+    </div>
+    <div class="researchContainer">
+        <p style="margin-top: 60px;">This website opens up in the work gallery. Here also the design was simple yet very creative. The fixed footer in this page caught my eyes. </p>
+    </div>
+
+
+    <footer>
+        <h4>@GRISHMA DAHAL</h4>
+        <a href="https://www.facebook.com/grishma.dahal.9"  target="_blank" id="fb"><img src="fb.png" width="35px" height="35px"/></a>
+        <a href="https://www.instagram.com/grishma_dahal/" id="insta" target="_blank"><img src="insta.png" width="35px" height="35px"/></a>
+        <a href="https://plus.google.com/u/0/106429902666555117005" id="googlePlus" target="_blank"><img src="google.png" width="35px" height="35px"/></a>
+
+    </footer>
+
+</body>
+	</html>
